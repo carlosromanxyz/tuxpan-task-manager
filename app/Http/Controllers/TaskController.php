@@ -45,6 +45,7 @@ class TaskController extends Controller
             'task' => Task::create([
                 'title' => request('title'),
                 'description' => request('description'),
+                'user_id' => auth()->user()->id
             ])
         ]);
     }

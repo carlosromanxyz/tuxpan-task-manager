@@ -15,7 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
+            $table->unsignedBigInteger('user_id'); // Reference to the user who created the task
             $table->timestamps();
+
+            // Add foreign key constraint to the user_id column
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
