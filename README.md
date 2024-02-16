@@ -7,6 +7,34 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Instructions
+
+* Please ensure if Docker is installed and running on your computer
+* Clone this repository
+* Import collections from `/postman` folder to your favorite API Rest client (Postman or Insomnia) to test this API
+* On any terminal run `docker-compose up -d`
+
+### Use these paths for Users:
+
+* `/api/register` (For user registration)
+* `/api/login` (For user login)
+* `/api/logout` (For user logout)
+* `/api/register` (For user registration)
+* `/api/login` (For user login)
+* `/api/logout` (For user logout)
+
+### Use these paths for Tasks
+
+* `/api/tasks` (GET for get all tasks)
+* `/api/tasks` (POST to create a task)
+* `/api/tasks/{id}` (GET to get detail task by ID)
+* `/api/tasks/{id}` (PUT to update task)
+* `/api/tasks/{id}` (DELETE to delete task)
+
+### About tokens for authentication
+
+Use `Bearer Token` on `Authentication` tab (based on Sanctum).
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
